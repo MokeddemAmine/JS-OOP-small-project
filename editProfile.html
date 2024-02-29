@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War Game using OOP</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" id="brand">War Game</a>
+                
+                <ul id="no_user">
+                    <li><a href="login.html">Sign In</a></li>
+                    <li><a href="register.html">Sign Up</a></li>
+                </ul>
+                <ul id="user">
+                    <li id="user_menu">
+                        <img id="image_user" alt="image user">
+                        <ul id="user_sous_menu">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="myGames.html">My Games</a></li>
+                            <li><a href="#" id="logout">LogOut</a></li>
+                        </ul>
+                    </li>
+                    <li id="user_name"><span></span></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="edit_profile">
+        <div class="container">
+            <div class="edit_profile_content">
+                <img  alt="image user" id="user_image"/>
+                <div class="info">
+                    <form id="edit_profile_form">
+                        <input type="file"  id="user_image_edit"/>
+                        <input type="text"   id="username"/>
+                        <input type="email"  id="email"/>
+                        <input type="submit" value="Update">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="JS/script.js"></script>
+    <script src="JS/user.js"></script>
+    <script src="JS/editProfile.js"></script>
+</body>
+</html>

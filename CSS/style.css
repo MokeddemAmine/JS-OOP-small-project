@@ -1,0 +1,330 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Times New Roman', Times, serif;
+}
+a{
+    text-decoration:none;
+    color:#fff;
+}
+.container{
+    width:80%;
+    margin:auto;
+}
+ul{
+    list-style:none;
+}
+
+/* Header style */
+
+.header-content{
+    background:#333;
+    padding:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.header-content #brand{
+    font-size:30px;
+    background:-webkit-radial-gradient(50% 50%,circle,gray,white);
+    border-radius:10px;
+}
+.header-content #no_user{
+    flex:0.15;
+    display:flex;
+    justify-content:space-around;
+}
+.header-content #user{
+    flex:0.15;
+    display:none;
+    justify-content:space-around;
+    align-items:center;
+}
+.header-content #user_menu{
+    position:relative;
+}
+.header-content #user_menu img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    cursor:pointer;
+}
+.header-content #user_sous_menu{
+    display:none;
+    position:absolute;
+    background:#777;
+    top:55px;
+    left:-20px;
+    width:120px;
+    padding:10px;
+}
+.header-content #user_sous_menu li{
+    margin:10px 0;
+}
+.header-content #user_sous_menu li a{
+    text-transform:uppercase;
+}
+.header-content #user_sous_menu li a:hover{
+    color:#111;
+}
+.header-content #user #user_identifier,
+.header-content #no_user a,
+.header-content #user_name span{
+    display:block;
+    font-size:20px;
+    background:#777;
+    color:#fff;
+    padding:5px;
+    border-radius:10px;
+}
+
+/* Main page Style */
+
+#user_login, #user_no_login{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:-webkit-radial-gradient(50% 50%,circle,gray,#333);
+    width:50%;
+    height:40%;
+    padding:50px 100px;
+    border-radius:20%;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    text-align:center;
+    display:none;
+}
+#user_login p, #user_no_login p{
+    font-size:30px;
+    color:#ccc;
+    line-height:50px;
+}
+/* Register and Login page Style */
+
+#register_form,#login_form{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:#777;
+    padding:30px;
+    width:33%;
+}
+#register_form input,#login_form input{
+    width:100%;
+    margin:10px 0;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+}
+#register_form input[type=submit],#login_form input[type=submit]{
+    display:block;
+    width:120px;
+    margin-right:auto;
+    margin-left:auto;
+    background:#111;
+    color:#fff;
+    text-transform:uppercase;
+    font-size:20px;
+    font-weight:bold;
+    cursor:pointer;
+}
+#register_form input[type=submit]:hover,
+#login_form input[type=submit]:hover{
+    opacity:0.8;
+}
+
+/* Profile page Style */
+
+.profile #user_image,
+.edit_profile #user_image{
+    width:300px;
+    height:300px;
+    border:1px solid #cfcaca;
+    border-radius:50%;
+    margin:20px;
+}
+.profile .info{
+    position:absolute;
+    top:33%;
+    left:33%;
+    background:#ccc;
+    padding:30px;
+    border-radius:10%;  
+    width:500px;
+    height:300px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+.profile .info p span:first-child{
+    font-size:20px;
+    display:inline-block;
+    width:100px;
+    color:#777;
+    font-weight:bold;
+}
+.profile .info p span:last-child{
+    display:inline-block;
+    margin-left:20px;
+    letter-spacing: 1px;
+    color:#333;
+}
+.profile .info button,
+.edit_profile .info input[type=submit]{
+    width:140px;
+    padding:10px;
+    border:none;
+    border-radius:10%;
+    margin-left:auto;
+    margin-right:auto;
+    background:#333;
+    color:#fff;
+    text-transform: uppercase;
+    cursor:pointer;
+}
+.profile .info button:hover,
+.edit_profile .info input[type=submit]:hover{
+    opacity:0.8;
+}
+
+/* Edit Profile page Style */
+
+.edit_profile_content{
+    background:#eee;
+    height:100vh;
+}
+.edit_profile_content input{
+    padding:10px;
+    border:none;
+    border-radius:10px;
+}
+#edit_profile_form{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    height:100%;
+}
+.edit_profile .info{
+    position:absolute;
+    top:33%;
+    left:33%;
+    background:#ccc;
+    padding:30px;
+    border-radius:10%;  
+    width:500px;
+    height:300px;
+    
+}
+
+/* Edit password page Style */
+
+.edit_password_content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:#eee;
+    padding:30px;
+    width:50%;
+    height:50%;
+    border-radius:10px;
+}
+#edit_password_form{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+#edit_password_form input{
+    display:block;
+    width:66%;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+}
+#edit_password_form input[type=submit]{
+    width:120px;
+    background:#333;
+    color:#fff;
+    text-transform:uppercase;
+    cursor:pointer;
+}
+#edit_password_form input[type=submit]:hover{
+    opacity:0.8;
+}
+
+/* War Game Section */
+
+.war_game_content{
+    background-color:#eee;
+    height:calc(100vh - 64px);
+    display:flex;
+    justify-content:space-around;
+}
+.war_game_content .person{
+    background:#e1e1e1;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    border:1px solid #ccc;
+    border-radius:10px;
+    margin-top:50px;
+    padding:20px;
+    height:400px;
+    width:600px;
+}
+.war_game_content .person .progress{
+    height:30px;
+    width:100%;
+    background:#ccc;
+}
+.war_game_content .person .progress span{
+    display:block;
+    width:100%;
+    height:100%;
+    background:darkgreen;
+}
+.war_game_content .person h2{
+    color:darkolivegreen;
+    letter-spacing:2px;
+    font-size:30px;
+    background:-webkit-radial-gradient(50% 50%,circle,white,#ccc);
+    padding:5px 10px;
+    border-radius:100px;
+}
+.war_game_content img{
+    width:200px;
+    height:150px;
+}
+.war_game_content .person .button{
+    width:50%;
+    display:flex;
+    justify-content:space-around;
+}
+.war_game_content .person button{
+    width:120px;
+    padding:10px;
+    border:none;
+    background:#333;
+    color:#fff;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    cursor:pointer;
+}
+.war_game_content .person button:hover{
+    opacity:0.8;
+}
+.war_game_content .person .button p{
+    color:red;
+    letter-spacing:3px;
+}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War Game using OOP</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" id="brand">War Game</a>
+                
+                <ul id="no_user">
+                    <li><a href="login.html">Sign In</a></li>
+                    <li><a href="register.html">Sign Up</a></li>
+                </ul>
+                <ul id="user">
+                    <li id="user_menu">
+                        <img id="image_user" alt="image user">
+                        <ul id="user_sous_menu">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="myGames.html">My Games</a></li>
+                            <li><a href="#" id="logout">LogOut</a></li>
+                        </ul>
+                    </li>
+                    <li id="user_name"><span></span></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="war_game">
+        <div class="container">
+            <div class="war_game_content">
+                <div class="person">
+                    <div class="progress narotoo-health">
+                        <span></span>
+                    </div>
+                    <h2>Narotoo</h2>
+                    <img src="images/cat-02.jpg" alt="image enemie 1"/>
+                    <div class="button">
+                        <button id="narotoo-attack">Attack</button>
+                        <button id="narotoo-make-health">Health</button>
+                        <p id="narotoo-alive"></p>
+                    </div>
+                </div>
+                <div class="person">
+                    <div class="progress sasakii-health">
+                        <span></span>
+                    </div>
+                    <h2>Sassaki</h2>
+                    <img src="images/cat-03.jpg" alt="image enemie 2"/>
+                    <div class="button">
+                        <button id="sasakii-attack">Attack</button>
+                        <button id="sasakii-make-health">Health</button>
+                        <p id="sasakii-alive"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="JS/myGames.js"></script>
+    <script src="JS/script.js"></script>
+    <script src="JS/user.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War Game using OOP</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" id="brand">War Game</a>
+                
+                <ul id="no_user">
+                    <li><a href="login.html">Sign In</a></li>
+                    <li><a href="register.html">Sign Up</a></li>
+                </ul>
+                <ul id="user">
+                    <li id="user_menu">
+                        <img src="images/cat-02.jpg" alt="image user">
+                        <ul id="user_sous_menu">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="myGames.html">My Games</a></li>
+                            <li><a href="#">LogOut</a></li>
+                        </ul>
+                    </li>
+                    <li id="user_name"><span>Amine</span></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="login">
+        <div class="container">
+            <form id="login_form">
+                <input type="text" placeholder="Enter a username ..." id="username"/>
+                <input type="password" placeholder="Enter a password ..." id="password"/>
+                <input type="submit" value="Sign In">
+            </form>
+        </div>
+    </section>
+    <script src="JS/script.js"></script>
+    <script src="JS/login.js"></script>
+</body>
+</html>
